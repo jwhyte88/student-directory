@@ -1,49 +1,28 @@
-student_count = 19
+students = [
+"Roi Driscoll",
+"James Whyte",
+"Margherita Serino",
+"Vaidas Mykolaitis",
+"Johann Bornman",
+"Kate Hamilton",
+"James Kemp",
+"Nic Yeeles",
+"Julie Walker",
+"Will Allen",
+"Julia Tan",
+"Federico Maffei",
+"Jamie Patel",
+"Faezrah Rizalman",
+"Josh Fail-Broon",
+"Sasha Cooper",
+"Nicolai DTH",
+"Nadav Matalon",
+"Fitsum Teklehaimanot"]
 
-puts "The students on my cohort of Makers Academy"
-puts "James Kemp"
-puts "Nic Yeeles"
-puts "Roi Driscoll"
-puts "James Whyte"
-puts "Margherita Serino"
-puts "Vaidas Mykolaitis"
-puts "Johann Bornman"
-puts "Kate Hamilton"
-puts "James Kemp"
-puts "Nic Yeeles"
-puts "Julie Walker"
-puts "Will Allen"
-puts "Julia Tan"
-puts "Federico Maffei"
-puts "Jamie Patel"
-puts "Faezrah Rizalman"
-puts "Josh Fail-Broon"
-puts "Sasha Cooper"
-puts "Nicolai DTH"
-puts "Nadav Matalon"
-puts "Fitsum Teklehaimanot"
-
-puts "Overall, we have #{student_count} great students."
-
-
-# students = ["Roi Driscoll",
-# "James Whyte",
-# "Margherita Serino",
-# "Vaidas Mykolaitis",
-# "Johann Bornman",
-# "Kate Hamilton",
-# "James Kemp",
-# "Nic Yeeles",
-# "Julie Walker",
-# "Will Allen",
-# "Julia Tan",
-# "Federico Maffei",
-# "Jamie Patel",
-# "Faezrah Rizalman",
-# "Josh Fail-Broon",
-# "Sasha Cooper",
-# "Nicolai DTH",
-# "Nadav Matalon",
-# "Fitsum Teklehaimanot"]
-
-# students.each { |name| puts "Hello #{name}" }
+puts "The students of my cohort at Makers Academy"
+puts "-------------"
+students.each do |student|
+  puts student
+end
+# finally, we print the total
+puts "Overall, we have #{students.length} great students"
