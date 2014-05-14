@@ -12,3 +12,8 @@ def input_students
 	end
 	students
 end
+
+students = input_students
+print_header
+print(students)
+print_footer(student)
