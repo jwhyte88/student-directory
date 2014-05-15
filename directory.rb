@@ -3,7 +3,7 @@ def input_students
 	students = []	
 	name = gets.chomp
 	while !name.empty? do
-		students << {name: name, cohort: :may}
+		students << { :name => name, :cohort => :may }
 		puts "Now we have #{students.length} students"
 		name = gets.chomp
 	end
@@ -16,9 +16,17 @@ def print_header
 end
 
 def print_student_names(students)
-  	students.each_with_index { |student, i| puts "#{i + 1}. #{student[:name]} (#{student[:cohort]} cohort)" }
+  	students.each_with_index { |student, i| puts "#{i + 1}. #{student[:name]} (#{student[:cohort]} cohort) }" }
  
 end
+
+# def print_student_names(students)
+# 	counter = 0
+
+# 	until counter == students.count do
+# 		puts "aksgnasng"
+# 	end
+# end
 
 def print_footer(names)
 	puts "Overall, we have #{names.length} great students"
