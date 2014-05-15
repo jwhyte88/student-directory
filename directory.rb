@@ -15,18 +15,19 @@ def print_header
 	puts "-------------"
 end
 
-def print_student_names(students)
-  	students.each_with_index { |student, i| puts "#{i + 1}. #{student[:name]} (#{student[:cohort]} cohort)" }
-end
-
 # def print_student_names(students)
-# 	counter = 0
-
-# 	until counter == students.count do
-# 		puts students[counter]
-# 		counter += 1
-# 	end
+#   	students.each_with_index { |student, i| puts "#{i + 1}. #{student[:name]} (#{student[:cohort]} cohort)" }
 # end
+
+def print_student_names(students)
+	counter = 0
+
+	until counter == students.count do
+		person = students[counter]
+		puts "Their name is #{person[:name]} and they're in the #{person[:cohort]} cohort"
+		counter += 1
+	end
+end
 
 def print_footer(names)
 	puts "Overall, we have #{names.length} great students"
