@@ -14,6 +14,3 @@ end
 
 print_students_names(class1)
 print_students_names(class2)
-
-
-
