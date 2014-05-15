@@ -1,15 +1,19 @@
+class1 = ["bob", "dave", "nic"]
+class2 = ["steve", "mike", "john"]
 
 
-students = ["bob", "dave", "nic"]
-
-def print_students_names(student_names)
+def print_students_names(x)
 	counter = 0
 
-	until counter == student_names.count do
-		puts "worked"
+	until counter == x.count do
+		puts x[counter]
 		counter += 1
 	end
 end
 
 
-print_students_names(students)
+print_students_names(class1)
+print_students_names(class2)
+
+
+
